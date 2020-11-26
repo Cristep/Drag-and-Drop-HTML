@@ -1,0 +1,54 @@
+
+Todo el Codigo lo pueden descargar de una ves  
+aqui el link 
+
+
+Primera parte del codigo 
+
+Con esta parte del codigo nosotros mandamos a llamar al archivo de css en donde nosotros
+tenemos diseñado nuestro ejercicio.
+
+  <link rel="stylesheet" href="Style.css">
+
+
+Segunda parte 
+
+Para que nosotros podamos mover nuestros circulos tenemos que llamar al atributo 
+draggable y escriblo en true ya que en ese modo nos permitira mover al circulo
+a cualquier parte del codigo.
+ 
+<div class="circle" draggable='true'> </div>
+
+Tercera parte 
+
+Con esta parte del codigo automaticamente los circulos se moveran en X y Y  en un radio
+de 90 grados.
+ 
+  for (i in circles) {
+                var circle = circles[i];
+                var x = random(0, 90);
+                var y = random(0, 90);
+                if (typeof circle.style != "undefined") {
+                    circle.style.top = y + '%';
+                    circle.style.left = x + '%';
+
+Cuarta parte 
+
+Aqui tenemos los eventos en donde nosotros le agregamos alguna funcion que quremos que haga
+
+              circle.addEventListener('dragstart', dragIniciado, false);
+              circle.addEventListener('dragend', dragFinalizado, false);
+
+Quinta parte
+
+Quiere decir que el navegador va hacer solo lo que nosotros pidamos.
+
+ e.preventDefault();
+
+
+Ultimo 
+
+Las funciones nosotros las agregamos cada funcion quieres decir alguna accion
+que nosotros queremos que haga nuestra pagina
+
+function
